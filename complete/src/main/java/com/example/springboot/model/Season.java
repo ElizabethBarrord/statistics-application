@@ -19,6 +19,8 @@ public class Season {
     private Integer yardsAgainst;
     private Integer fumbles;
     private Integer interceptions;
+    private Integer fumblesRecovered;
+    private Integer interceptionsRecovered;
     
     
 
@@ -102,6 +104,21 @@ public class Season {
         this.interceptions = interceptions;
     }
 
+    public Integer getFumblesRecovered() {
+        return this.fumblesRecovered;
+    }
+
+    public void setFumblesRecovered(Integer fumblesRecovered) {
+        this.fumblesRecovered = fumblesRecovered;
+    }
+
+    public Integer getInterceptionsRecovered() {
+        return this.interceptionsRecovered;
+    }
+
+    public void setInterceptionsRecovered(Integer interceptionsRecovered) {
+        this.interceptionsRecovered = interceptionsRecovered;
+    }
 }
 
    
