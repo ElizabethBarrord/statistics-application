@@ -43,12 +43,6 @@ public class StatisticsController {
             return new ResponseEntity<>(seasonsRepository.findAll(), HttpStatus.OK);
         }
 
-        // calculate win percentage
-        @GetMapping("/seasons/winPercentage")
-        public ResponseEntity<Double> getWinPercentage(@RequestBody Season season) {
-            return new ResponseEntity<>(seasonsRepositoryCustom.calculateWinPercentage(season.getWins(), season.getLosses()), HttpStatus.OK);
-        }
-
 }
 
 

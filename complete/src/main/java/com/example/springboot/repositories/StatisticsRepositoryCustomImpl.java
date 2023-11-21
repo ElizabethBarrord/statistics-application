@@ -8,14 +8,5 @@ import com.example.springboot.repositories.StatisticsRepositoryCustom;
 @Repository
 public class StatisticsRepositoryCustomImpl implements StatisticsRepositoryCustom {
 
-    // calculate win percentage
-    public double calculateWinPercentage(Integer wins, Integer losses) {
-        return (double) wins / (wins + losses);
-    }
-
-    // calculate yards per game
-    public double calculateYardsPerGame(Integer yardsFor, Integer games) {
-        return (double) yardsFor / games;
-    }
 
 }

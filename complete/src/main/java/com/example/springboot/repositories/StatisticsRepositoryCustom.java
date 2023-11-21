@@ -9,10 +9,4 @@ import java.util.List;
 @Repository
 public interface StatisticsRepositoryCustom {
 
-    // calculate win percentage
-    double calculateWinPercentage(Integer wins, Integer losses);
-
-    // calculate yards per game
-    double calculateYardsPerGame(Integer yardsFor, Integer games);
-
 }
