@@ -1,0 +1,25 @@
+{
+    "name": "spring-boot-app",
+    "image": "mcr.microsoft.com/vscode/devcontainers/java:11-bullseye",
+
+    "customizations": {
+        "vscode": {
+            "settings": { 
+            },
+            
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "GitHub.copilot",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "none",
+            "installGradle": "false",
+            "installMaven": "true"
+        },
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+}
